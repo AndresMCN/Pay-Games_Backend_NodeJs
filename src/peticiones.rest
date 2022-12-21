@@ -1,0 +1,29 @@
+###
+POST  http://localhost:9000/api/apuestas
+Content-Type: application/json
+
+{
+    "usuario":"brayan@gmail.com",
+    "marcador":"3-1",
+    "partidoApostado":"Bucaramanga vs Nacional"
+}
+
+###
+GET http://localhost:9000/api/apuestas
+
+###
+GET http://localhost:9000/api/apuestas/63a3340842c77ace64adf21f
+
+###
+PUT  http://localhost:9000/api/apuestas/63a3340842c77ace64adf21f
+Content-Type: application/json
+
+{
+    "usuario":"pablo@gmail.com",
+    "marcador":"5-1",
+    "partidoApostado":"Bucaramanga vs Nacional"
+}
+
+
+###
+DELETE http://localhost:9000/api/apuestas/63a3340842c77ace64adf21f
